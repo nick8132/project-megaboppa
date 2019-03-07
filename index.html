@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="da">
 <head>
-	<title>informatik</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Own meta tags -->
+	<title>Project Megaboppa</title>
+	<meta name="description" content="Stacker Game - Informatik HTX Næstved">
+	<meta name="author" content="Daniel M., Marcus S., Nicklas F. & Sebastian B.">
+	<link rel="icon" href="favicon.ico">
+
+	<!-- Custom stylesheet, script and so on -->
 	<script src="javascript.js"></script>
+	<script src="arcadejs.js"></script>
+	<link rel="stylesheet" href="css.css">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-<body>
+<body scroll="no" style="overflow: hidden">
+	<div id="arcade" align="center" class="text-center">
+		<img id="image" height="281" width="201" src="stuff/arcade.png">
+	</div>
+	<div id="arcadebgdiv" align="center" class="text-center">
+		<img id="arcadebg" height="281" width="201" src="stuff/bg.png">
+	</div>
+	<div class="vertical-center">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col" align="center">
+					<canvas id="myCanvas" height="500" width="250" style="border: 2px solid black;">Your browser does not support the canvas element.</canvas>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col" align="center">
+					<button id="turnon" onclick="turnon()"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Defining of images -->
 	<img id="bg-off" width="0" height="0" src="stuff/bg.png">
 	<img id="bg-on" width="0" height="0" src="stuff/stacker.png">
 	<img id="block" width="0" height="0" src="stuff/block.png">
@@ -13,8 +49,11 @@
 	<img id="shop_btn" width="0" height="0" src="stuff/shop_btn.png">
 	<img id="menu_btn" width="0" height="0" src="stuff/menu_btn.png">
 	<img id="underline_btn" width="0" height="0" src="stuff/underline_btn.png">
-	<canvas id="myCanvas" width="350" height="700" style="border: 2px solid black;">Your browser does not support the canvas element.</canvas>
-	<button onclick="turnon()">Turn ON</button>
-	<p id="useragent">useragent</p>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
