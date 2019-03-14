@@ -1,5 +1,5 @@
 window.onload = function() {
-	if(navigator.platform == "iPhone"){
+	if(navigator.platform == "iPhone" || navigator.platform == "iPad"){
 		Iresize()
 		connect()
 	}else{
