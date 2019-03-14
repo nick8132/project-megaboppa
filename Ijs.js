@@ -1,7 +1,8 @@
 window.onload = function() {
 	if(navigator.platform == "iPhone" || navigator.platform == "iPad"){
-		Iresize()
-		connect()
+		Iresize();
+		connect();
+		play();
 	}else{
 		location.assign("index.html")
 	}
