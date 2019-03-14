@@ -27,7 +27,7 @@ var gameover = false;
 //sounds
 var gamestart = new Audio('stuff/sound-on.mp3');
 var wallhit = new Audio('stuff/Hit.wav');
-var moving = new Audio('stuff/m.wav');
+var moving = new Audio('stuff/m-2.mp3');
 var press = new Audio('stuff/space.mp3');
 var dead = new Audio('stuff/death.mp3');
 var winsound = new Audio('stuff/win.mp3');
