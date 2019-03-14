@@ -1,0 +1,17 @@
+body {
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: auto;
+	overflow: hidden;
+	position: fixed;
+	left: 0px;
+	margin-left: 0px;
+}
+#NOTHING{
+	position: fixed;
+	height: 0px;
+	width: 0px;
+}
