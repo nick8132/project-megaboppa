@@ -1,0 +1,55 @@
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+#arcade {
+  position: fixed;
+  z-index: 0;
+  align-items: center;
+  display: inline-block;
+}
+#arcadebgdiv {
+  position: fixed;
+  z-index: -2;
+  align-items: center;
+  display: inline-block;
+}
+#myCanvas {
+  position: relative;
+  z-index: -1;
+  border: 1px solid black;
+}
+#image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#arcadebg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  background-image: url(stuff/background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#turnon {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 25px 50px;
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+#turnon:focus {
+  outline: none;
+}

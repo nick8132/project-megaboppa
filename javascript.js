@@ -124,9 +124,9 @@ function menu() {
     var room_btn = document.getElementById("room_btn");
     var shop_btn = document.getElementById("shop_btn");
     g2d.drawImage(img, 0, 0, canvas.width, canvas.height);
-    g2d.drawImage(shop_btn, canvas.width/2-159.5, canvas.height/2-66.5);
-    g2d.drawImage(room_btn, ((canvas.width/2)-159.5), ((canvas.height/2)-66.5)+canvas.height/4);
-    g2d.drawImage(play_btn, ((canvas.width/2)-159.5), ((canvas.height/2)-66.5)-canvas.height/4);
+    g2d.drawImage(shop_btn, canvas.width/2-(canvas.width/5*4)/2, ((canvas.height/2)/2)*3-((canvas.width/5*4)*0.4169279)/2, canvas.width/5*4, (canvas.width/5*4)*0.4169279);
+    g2d.drawImage(room_btn, canvas.width/2-(canvas.width/5*4)/2, canvas.height/2-((canvas.width/5*4)*0.4169279)/2, canvas.width/5*4, (canvas.width/5*4)*0.4169279);
+    g2d.drawImage(play_btn, canvas.width/2-(canvas.width/5*4)/2, ((canvas.height/2)/2)-((canvas.width/5*4)*0.4169279)/2, canvas.width/5*4, (canvas.width/5*4)*0.4169279);
 }
 
 function newflick() {
@@ -475,23 +475,25 @@ function underline(a) {
     var play_btn = document.getElementById("play_btn")
 	if(a==1){
 		menu();
-		g2d.drawImage(img, ((canvas.width/2)-159.5), ((canvas.height/2)-66.5)-canvas.height/4);
+		g2d.drawImage(img, canvas.width/2-(canvas.width/5*4)/2, ((canvas.height/2)/2)-((canvas.width/5*4)*0.4169279)/2, canvas.width/5*4, (canvas.width/5*4)*0.4169279);
 	}else if(a==2){
 		menu();
-		g2d.drawImage(img, canvas.width/2-159.5, canvas.height/2-66.5);
+		g2d.drawImage(img, canvas.width/2-(canvas.width/5*4)/2, canvas.height/2-((canvas.width/5*4)*0.4169279)/2, canvas.width/5*4, (canvas.width/5*4)*0.4169279);
 	}else if(a==3){
 		menu();
-		g2d.drawImage(img, ((canvas.width/2)-159.5), ((canvas.height/2)-66.5)+canvas.height/4);
+		g2d.drawImage(img, canvas.width/2-(canvas.width/5*4)/2, ((canvas.height/2)/2)*3-((canvas.width/5*4)*0.4169279)/2, canvas.width/5*4, (canvas.width/5*4)*0.4169279);
 	}else if(a==4){
-		g2d.drawImage(play_btn, ((canvas.width/2)-159.5), ((canvas.height/2)-66.5)-((canvas.height/2)/3));
-		g2d.drawImage(menu_btn, ((canvas.width/2)-159.5), ((canvas.height/2)-66.5)+((canvas.height/2)/3));
-		g2d.drawImage(img, ((canvas.width/2)-159.5), ((canvas.height/2)-66.5)-((canvas.height/2)/3));
+		g2d.drawImage(play_btn, canvas.width/2-(canvas.width/5*4)/2, (canvas.height/3)-((canvas.width/5*4)*0.4169279)/2, canvas.width/5*4, (canvas.width/5*4)*0.4169279);
+		g2d.drawImage(menu_btn, canvas.width/2-(canvas.width/5*4)/2, (canvas.height/3*2)-((canvas.width/5*4)*0.4169279)/2, canvas.width/5*4, (canvas.width/5*4)*0.4169279);
+		g2d.drawImage(img, canvas.width/2-(canvas.width/5*4)/2, (canvas.height/3)-((canvas.width/5*4)*0.4169279)/2, canvas.width/5*4, (canvas.width/5*4)*0.4169279);
 	}else if(a==5){
-		g2d.drawImage(play_btn, ((canvas.width/2)-159.5), ((canvas.height/2)-66.5)-((canvas.height/2)/3));
-		g2d.drawImage(menu_btn, ((canvas.width/2)-159.5), ((canvas.height/2)-66.5)+((canvas.height/2)/3));
-		g2d.drawImage(img, ((canvas.width/2)-159.5), ((canvas.height/2)-66.5)+((canvas.height/2)/3));
+		g2d.drawImage(play_btn, canvas.width/2-(canvas.width/5*4)/2, (canvas.height/3)-((canvas.width/5*4)*0.4169279)/2, canvas.width/5*4, (canvas.width/5*4)*0.4169279);
+		g2d.drawImage(menu_btn, canvas.width/2-(canvas.width/5*4)/2, (canvas.height/3*2)-((canvas.width/5*4)*0.4169279)/2, canvas.width/5*4, (canvas.width/5*4)*0.4169279);
+		g2d.drawImage(img, canvas.width/2-(canvas.width/5*4)/2, (canvas.height/3*2)-((canvas.width/5*4)*0.4169279)/2, canvas.width/5*4, (canvas.width/5*4)*0.4169279);
 	}
 }
+
+
 function lightblock(x,y) {
 	var canvas = document.getElementById("myCanvas");
     var g2d = canvas.getContext("2d");
