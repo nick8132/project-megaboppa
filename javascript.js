@@ -1,6 +1,6 @@
 window.onload = function() {
 	if(navigator.platform == "iPhone"){
-		location.assign("iPhone.html")
+		location.replace("./iPhone.html")
 	}
     var canvas = document.getElementById("myCanvas");
     var g2d = canvas.getContext("2d");
@@ -646,7 +646,7 @@ function log(argument) {
 	console.log("onmenu: " + onmenu);
 	console.log("onshop: " + onshop);
 	console.log("onroom: " + onroom);
-	console.log("gameover: "+ gameover);	
+	console.log("gameover: "+ gameover);
 }
 
 function fixlocal(){
