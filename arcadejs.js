@@ -33,7 +33,7 @@ function resize() {
 
   // Canvas
   var canvas = document.getElementById("myCanvas");
-  height = window.innerHeight/4*2.2;
+  height = window.innerHeight/4*2;
   ratio = canvas.width/canvas.height;
   width = height*ratio;
 
