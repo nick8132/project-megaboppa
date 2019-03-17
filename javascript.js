@@ -19,6 +19,8 @@ var winsound = new Audio('stuff/win.mp3');
 var end = new Audio('stuff/end.wav');
 var jump = new Audio('stuff/jump.wav');
 var selected = new Audio('stuff/select.mp3');
+var music = new Audio('stuff/music.aac');
+music.volume = 0.5;
 selected.volume = 0.2;
 end.volume = 0.3;
 jump.volume = 0.3;
@@ -117,6 +119,8 @@ function menu() {
 	onroom = false;
 	onshop = false;
 	gameover = false;
+	music.pause();
+	music.currentTime = 0;
 	var canvas = document.getElementById("myCanvas");
     var g2d = canvas.getContext("2d");
     var img = document.getElementById("bg-off");
@@ -155,6 +159,7 @@ function game(l, d) {
 	onroom = false;
 	onshop = false;
 	gameover = false;
+	music.play();
 	move(l, d);
 	function move(l, d){
 		if(stop){
@@ -543,6 +548,7 @@ function win(){
 			localStorage.setItem("coins", parseInt(coins)+(50*parseInt(wss)));
 		}
 	}
+	music.pause();
 	winsound.play();
 	var fall = 0
 	falling()
@@ -555,6 +561,7 @@ function win(){
 				falling()
 			}, 50);
 		}else{
+			music.play();
 			gameend();
 		}
 	}
